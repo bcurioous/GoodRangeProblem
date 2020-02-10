@@ -1,0 +1,19 @@
+{
+  "name": "good-range-problem",
+  "version": "1.0.0",
+  "description": "Kabra Interview question",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/james-gc/GoodRangeProblem.git"
+  },
+  "author": "James Christian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/james-gc/GoodRangeProblem/issues"
+  },
+  "homepage": "https://github.com/james-gc/GoodRangeProblem#readme"
+}
