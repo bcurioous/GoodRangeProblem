@@ -17,6 +17,9 @@ function findGoodRangeSum(lines) {
   const N = +nAndM[0];
   const QUERY_LENGTH = nAndM[1];
 
+
+  validateConstraints(N,QUERY_LENGTH, allLines);
+
   console.log("N", N);
   console.log("QUERY_LENGTH", QUERY_LENGTH);
 
@@ -42,6 +45,18 @@ function findGoodRangeSum(lines) {
   }
 //   console.log("setA", setA);
   console.log("output", output);
+}
+
+function validateConstraints(n,m,queries) {
+  const mMaxLimit = Math.pow(10,6);
+  if(m >= mMaxLimit){
+    throw new Error(`M=${m} should be <= 10^6 = ${mMaxLimit}`);
+  }
+  queries.forEach(x=>{
+    if(x>n){
+      throw new Error(`X=${x} is greater than N=${n}`);
+    }
+  });
 }
 
 function numberComparator(a, b) {
